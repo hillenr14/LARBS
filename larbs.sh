@@ -14,8 +14,8 @@ while getopts ":a:r:b:p:h" o; do case "${o}" in
 	*) printf "Invalid option: -%s\\n" "$OPTARG" && exit ;;
 esac done
 
-[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/lukesmithxyz/voidrice.git"
-[ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/LukeSmithxyz/LARBS/master/progs.csv"
+[ -z "$dotfilesrepo" ] && dotfilesrepo="https://github.com/hillenr14/voidrice.git"
+[ -z "$progsfile" ] && progsfile="https://github.com/hillenr14/LARBS/blob/master/progs.csv"
 [ -z "$aurhelper" ] && aurhelper="yay"
 [ -z "$repobranch" ] && repobranch="master"
 
@@ -36,7 +36,7 @@ fi
 error() { clear; printf "ERROR:\\n%s\\n" "$1"; exit;}
 
 welcomemsg() { \
-	dialog --title "Welcome!" --msgbox "Welcome to Luke's Auto-Rice Bootstrapping Script!\\n\\nThis script will automatically install a fully-featured Linux desktop, which I use as my main machine.\\n\\n-Luke" 10 60
+	dialog --title "Welcome!" --msgbox "Welcome to Robert's Auto-Rice Bootstrapping Script!\\n\\nThis script will automatically install a fully-featured Linux desktop, which I use as my main machine.\\n\\n-Luke" 10 60
 	}
 
 selectdotfiles() { \
